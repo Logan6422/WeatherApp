@@ -71,7 +71,7 @@ function climaHoy(data){
     let chance_snow = document.querySelector('.chance-snow');
     let max_wind = document.querySelector('.max-wind');
 
-    climaIcon.src = `http:${data.forecast.forecastday[0].day.condition.icon}`;
+    climaIcon.src = `https:${data.forecast.forecastday[0].day.condition.icon}`;
     descripcionClima.innerHTML = `${data.forecast.forecastday[0].day.condition.text}`
     avrg_temp.innerHTML = `Temperature: ${data.forecast.forecastday[0].day.avgtemp_c}C / ${data.forecast.forecastday[0].day.avgtemp_f}F`;
     avg_hum.innerHTML = `Humidity: ${data.forecast.forecastday[0].day.avghumidity}%`;
