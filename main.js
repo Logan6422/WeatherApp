@@ -2,7 +2,7 @@ let wallpaper;
 let query = 'Santa Fe, Santa Fe';
 function apis(){
     // URL de la API
-    const apiUrl = 'http://api.weatherapi.com/v1';
+    const apiUrl = 'https://api.weatherapi.com/v1';
     const apiNasaUrl = "https://api.nasa.gov/planetary/apod?api_key=";
     // Clave de API
     const apiKey = 'dd7b160280684a3b9cd05952242202';
