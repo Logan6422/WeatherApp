@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherWebpage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weatherApp</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <script src="index.js"></script>
+<body class="background paralaje">
+  <header class="headerContainer">
+    <navbar class="navbarContainer">
+      <h1>WEATHER APP</h1>
+    </navbar>
+  </header>
+  <section class="generalContainer">
+    <div class="climaTodayContainer">
+      <div class="headerclima">
+        
+        <img class="clima-icon" src="" alt="clima-icon">
+        <h1 class="locationTitle"></h1>
+        <h1 class=" title descripcion-clima-hoy"></h1> 
+        <label for="q">
+          Insert Location
+          <input type="text" id="q" placeholder="Santa Fe, Santa Fe">
+        </label>
+        
+      </div>
+      
+      <div class="datosClima">
+        <h1 class="avrg-temp"></h1>
+        <h1 class="avrg-hum"></h1>
+        <h1 class="chance-rain"></h1>
+        <h1 class="chance-snow"></h1>
+        <h1 class="max-wind"> </h1>
+      </div>
+    </div>
+    <div class="climaForecastContainer">
+      <div class="clima1">
+        <div class="headerclima">
+       
+          <h1 class="title1"></h1>
+          
+        </div>
+       
+        <div class="datosClima">
+          <h1 class="avrg-temp1"></h1>
+          <h1 class="avrg-hum1"></h1>
+          <h1 class="chance-rain1"></h1>
+          <h1 class="chance-snow1"></h1>
+          <h1 class="max-wind1"> </h1>
+        </div>
+        
+        
+      </div>
+      <div class="clima2">
+        <div class="headerclima">
+  
+          <h1 class="title2"></h1>
+          
+        </div>
+      
+        <div class="datosClima">
+          <h1 class="avrg-temp2"></h1>
+          <h1 class="avrg-hum2"></h1>
+          <h1 class="chance-rain2"></h1>
+          <h1 class="chance-snow2"></h1>
+          <h1 class="max-wind2"> </h1>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Sitio web creado por <span class="autor">Log_4n</span></p>
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>
