@@ -117,7 +117,7 @@ function clima2(data){
 }
 
 function cargarWallpaper(data){
-    wallpaper = data.hdurl;
+    wallpaper = data.hdurl.replace(/^http:\/\//i, 'https://');
     let body = document.querySelector('.background');
     body.style.backgroundImage = `url('${wallpaper}')`;
 }
