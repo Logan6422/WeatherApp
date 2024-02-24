@@ -119,11 +119,7 @@ function clima2(data){
 }
 
 function cargarWallpaper(data){
-<<<<<<< HEAD
-    wallpaper = data.hdurl.replace(/^http:\/\//i, 'https://'); 
-=======
     wallpaper = data.hdurl.replace(/^http:\/\//i, 'https://');
->>>>>>> 7a6228acefdd9a5f18336a843fe457b2f3af339c
     let body = document.querySelector('.background');
     body.style.backgroundImage = `url('${wallpaper}')`;
 }
