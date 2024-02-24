@@ -46,9 +46,6 @@
  
 }
 
-.navbarContainer h1{
-  animation: pulse 4s infinite alternate;
-}
 
 .generalContainer{
   height: 90vh;
@@ -131,22 +128,9 @@ label{
 
 .locationTitle{
   font-size: 5vh;
-  animation: fadeIn 3s ease infinite alternate;
   color: #ff0f6f; 
 }
 
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
 
 .paralaje {
@@ -169,7 +153,7 @@ footer{
 
 .autor {
   font-weight: bold;
-  color: #ff0f6f; /* Color deseado */
+  color: #ff0f6f; 
 }
 
 @media only screen and (max-width: 768px) {
@@ -183,7 +167,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4vh;
+    font-size: 8vw;
     text-align: center;
   };
 
@@ -257,7 +241,6 @@ footer{
   
   .locationTitle{
     font-size: 4.5vw;
-    animation: fadeIn 3s ease infinite alternate;
     color: #ff0f6f; 
   }
   
@@ -266,16 +249,4 @@ footer{
   }
 
 
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(0.8);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 }
