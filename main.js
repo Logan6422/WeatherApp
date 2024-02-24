@@ -118,11 +118,12 @@ function clima2(data){
     max_wind.innerHTML = `Max Wind Velocity: ${data.forecast.forecastday[2].day.maxwind_kph}kmh/${data.forecast.forecastday[0].day.maxwind_mph}mph`;
 }
 
-function cargarWallpaper(data){
-    wallpaper = data.hdurl.replace(/^http:\/\//i, 'https://');
+function cargarWallpaper(data) {
+    let wallpaper = data.hdurl.replace(/^http:\/\//i, 'https://'); 
     let body = document.querySelector('.background');
     body.style.backgroundImage = `url('${wallpaper}')`;
 }
+
 
 function realizarBusqueda(){
     let input = document.getElementById('q');
