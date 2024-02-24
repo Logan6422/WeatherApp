@@ -202,11 +202,11 @@ footer{
     align-items: center;
     flex-direction: column;
     height: 50%;
-    font-size: 2vh;
+    font-size: 5vw;
   }
 
   .clima-icon{
-    width: 15%;
+    width: 25%;
     height: 20%;
     
   }
@@ -217,14 +217,14 @@ footer{
     height: 50%;
     align-items: center;
     justify-content: center;
-    font-size: 1.2vh;
+    font-size: 2.2vw;
   }
   
   #q{
     background-color: #FFBE6F;
     border: none;
     color: rgb(0, 0, 0);
-    font-size: 1.5vh;
+    font-size: 1.5vw;
     font-weight: bold;
     text-align: center;
   }
@@ -256,13 +256,13 @@ footer{
   }
   
   .locationTitle{
-    font-size: 2.5vh;
+    font-size: 4.5vw;
     animation: fadeIn 3s ease infinite alternate;
     color: #ff0f6f; 
   }
   
   .title{
-    font-size: 2.5vh;
+    font-size: 2.5vw;
   }
 
 
