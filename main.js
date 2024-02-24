@@ -70,7 +70,10 @@ function climaHoy(data){
     let chance_rain = document.querySelector('.chance-rain');
     let chance_snow = document.querySelector('.chance-snow');
     let max_wind = document.querySelector('.max-wind');
+    let locationTitle = document.querySelector('.locationTitle');
 
+    
+    locationTitle.innerHTML = `${data.location.name},${data.location.country}`;
     climaIcon.src = `https:${data.forecast.forecastday[0].day.condition.icon}`;
     descripcionClima.innerHTML = `${data.forecast.forecastday[0].day.condition.text}`
     avrg_temp.innerHTML = `Temperature: ${data.forecast.forecastday[0].day.avgtemp_c}C / ${data.forecast.forecastday[0].day.avgtemp_f}F`;
@@ -81,15 +84,14 @@ function climaHoy(data){
 }
 
 function clima1(data){
-    let locationTitle = document.querySelector('.locationTitle');
+    
     let descripcionClima = document.querySelector('.title1');
     let avrg_temp = document.querySelector('.avrg-temp1');
     let avg_hum = document.querySelector('.avrg-hum1');
     let chance_rain = document.querySelector('.chance-rain1');
     let chance_snow = document.querySelector('.chance-snow1');
     let max_wind = document.querySelector('.max-wind1');
-
-    locationTitle.innerHTML = `${data.location.name}, ${data.location.country}`;
+    
     descripcionClima.innerHTML = `${data.forecast.forecastday[1].date} WEATHER`
     avrg_temp.innerHTML = `Temperature: ${data.forecast.forecastday[1].day.avgtemp_c}C / ${data.forecast.forecastday[0].day.avgtemp_f}F`;
     avg_hum.innerHTML = `Humidity: ${data.forecast.forecastday[1].day.avghumidity}%`;
@@ -117,7 +119,7 @@ function clima2(data){
 }
 
 function cargarWallpaper(data){
-    wallpaper = data.hdurl;
+    wallpaper = data.hdurl.replace(/^http:\/\//i, 'https://'); 
     let body = document.querySelector('.background');
     body.style.backgroundImage = `url('${wallpaper}')`;
 }
