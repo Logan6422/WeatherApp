@@ -244,8 +244,8 @@ footer{
     color: #ff0f6f; 
   }
   
-  .title{
-    font-size: 2.5vw;
+  .title, .title1 ,.title2{
+    font-size: 5.5vw;
   }
 
 
